@@ -19,7 +19,7 @@ const ChandiniRaat = () => {
           sm:bottom-8 sm:right-6
           md:bottom-8 md:right-8
           lg:bottom-10 lg:right-10
-          bg-black text-white
+          text-white
           px-5 py-3 
           sm:px-6 sm:py-3.5
           md:px-8 md:py-4
@@ -27,7 +27,7 @@ const ChandiniRaat = () => {
           shadow-lg hover:shadow-xl
           transition-all duration-300 z-[100] group
           hover:scale-105"
-        style={{ position: 'fixed' }}
+        style={{ position: 'fixed', backgroundColor: '#2A6D6A' }}
       >
         <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
           <span
