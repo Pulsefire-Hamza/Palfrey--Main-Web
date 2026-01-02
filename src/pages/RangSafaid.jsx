@@ -13,42 +13,42 @@ const RangSafaid = () => {
       {/* Floating Shop Now Button (UNCHANGED DESIGN) */}
       <button
         onClick={handleShopNow}
-        className="fixed right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-black to-gray-800 text-white px-3 py-4 md:px-6 md:py-6 lg:px-8 lg:py-6 rounded-l-xl md:rounded-l-2xl shadow-2xl hover:shadow-black/50 transition-all duration-500 z-50 group overflow-hidden"
+        className="fixed 
+          bottom-6 right-4
+          sm:bottom-8 sm:right-6
+          md:bottom-8 md:right-8
+          lg:bottom-10 lg:right-10
+          text-white
+          px-5 py-3 
+          sm:px-6 sm:py-3.5
+          md:px-8 md:py-4
+          rounded-full
+          shadow-lg hover:shadow-xl
+          transition-all duration-300 z-[100] group
+          hover:scale-105"
+        style={{ position: 'fixed', backgroundColor: '#2A6D6A' }}
       >
-        <div className="relative">
-          <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-
-          <div className="relative flex flex-col items-center gap-1 md:gap-2">
-            <span
-              className="font-[BlackerDisplay] text-xs md:text-lg lg:text-xl tracking-wider md:tracking-widest"
-              style={{ fontFamily: "Blacker Display, serif" }}
-            >
-              SHOP
-            </span>
-
-            <div className="w-6 md:w-8 h-px bg-white"></div>
-
-            <span
-              className="font-[BlackerDisplay] text-xs md:text-lg lg:text-xl tracking-wider md:tracking-widest"
-              style={{ fontFamily: "Blacker Display, serif" }}
-            >
-              NOW
-            </span>
-
-            <svg
-              className="w-4 h-4 md:w-6 md:h-6 mt-1 md:mt-2 transform group-hover:translate-x-1 transition-transform duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </div>
+        <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
+          <span
+            className="font-[BlackerDisplay] text-xs sm:text-sm md:text-sm font-light tracking-[0.2em] whitespace-nowrap"
+            style={{ fontFamily: "Blacker Display, serif" }}
+          >
+            SHOP NOW
+          </span>
+          
+          <svg
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 transform group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
         </div>
       </button>
 
